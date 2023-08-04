@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    <h1 id="title"> Survey Form </h1>
+    <p id="description" class="description"><em>this survey is made by Mouhamed Benabdallah to test myself</em> </p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name-label" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" ></label>
+            <label for="email-label" id="email-label">Email<input type="text" id="email" placeholder="Enter your Email" ></label>
+            <label for="number-label" id="number-label">age<input type="number"  id="number" min="13" max="120" placeholder="Age"></label>
+          </fieldset>
+          
+        <fieldset>
+          <p>what is your job title:</p> 
+            <select id="dropdown">
+              <option value="">(select a job)</option>
+              <option value="1" >student</option>
+              <option value="2">software engineer </option>
+              <option value="3">cybersecurity engineer</option>
+              <option value="4"> data science engineer </option>
+            </select>
+        </fieldset>
+        <fieldset class="sex">
+          <p> what is your gender:</p>
+          <label for="male"><input type="radio" name="gender" id="male" class="inline" value="sex"> male</label>
+          <label for="female"><input type="radio" name="gender" id="female" class="inline" value="sex"> female</label>
+          <label for=""><input type="radio" name="gender" id="Other" class="inline" value="sex" checked> other</label>
+        </fieldset>
+        <fieldset>
+          <p>what skill you want to improve or you want learn:</p>
+          <label for="front"><input type="checkbox" value="front" class="inline"> front end developoment</label>
+          <label for="back"><input type="checkbox" value="back"  class="inline"> back end developoment</label>
+          <label for="cyber"><input type="checkbox" value="cyber" class="inline"> cybersecurity</label>
+        </fieldset>
+        <fieldset>
+          <label for="comment">any comment or suggestions?</label>
+          <textarea name="comment" id="comment" cols="10" rows="5"></textarea>
+        </fieldset>
+        <input type="submit" value="submit" onclick="verif()" id="submit">
+    </form>
+    
+    
+  </body>
+</html>
